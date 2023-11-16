@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Europe</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="page-wrapper">
@@ -12,15 +13,16 @@
           <div class="container">
                 <div class="nav-content flex">
                     <div class="nav-contant-switcher flex">
-                        <a class="nav-contant-switcher__lang ua" href="">
+                        <a class="nav-contant-switcher__lang ua" href="#">
                             <span class="ua">UA</span>
                         </a>
-                        <a class="nav-contant-switcher__lang ru" href="">
+                        <span class="nav-contant-switcher__split">|</span>
+                        <a class="nav-contant-switcher__lang ru" href="#">
                             <span class="ru">RU</span>
                         </a>
                     </div>
-                    <div class="nav-contant-telephons">
-                        <ul class="nav-contant-telephons-ul">
+                    <div class="nav-contant-telephons ">
+                        <ul class="nav-contant-telephons-ul flex">
                             <li class="nav-contant-telephons-ul-li">
                                 <a class="nav-contant-telephons-ul-li-link" href="tel:0(800)333-000">
                                     <img class="nav-contant-telephons-ul-li-link__img" src="/image/nav-phone.png" alt="icon-phone">
@@ -41,7 +43,7 @@
         </nav>
         <nav class="navbar-wrapper">
           <div class="container">
-                <div class="navbar">
+                <div class="navbar flex">
                     <img class="navbar__logo" src="/image/logo-nav.png" alt="logo">
                     <ul class="navbar-items flex">
                         <a class="navbar-items-link" href="#">
@@ -67,16 +69,18 @@
           <div class="container">
            <div class="header flex-column">
             <h3 class="header-sup-title">Безопасная работа в европе!</h3>
-            <div class="header-flex flex-column">
-                <img class="header-img" src="" alt="">
-                <div class="header-info">
+            <div class="header-flex flex">
+                <img class="header-img" src="/image/europe-bg.jpg" alt="bg-europe">
+                <div class="header-info flex-column">
+                   <div class="header-info-block">
                     <h1 class="header-info-title">Официальная работа в Европе</h1>
                     <p class="header-info-description">Трудоустраиваем на проверенные вакансии в 4-х странах ЕС.
                         Рабочие визы. Полное сопровождение.
                         Более 5 лет с Вами!</p>
+                   </div>
                     <div class="header-info-btns flex">
-                        <a href="#"><button>Направление</button></a>
-                        <a href="#"><button>Подробнее</button></a>
+                        <div class="header-info-btns-button"><a href="#"><button>Направление</button></a></div>
+                        <div class="header-info-btns-button"><a href="#"><button>Подробнее</button></a></div>
                     </div>
                 </div>
             </div>
@@ -88,7 +92,7 @@
                 <div class="section-description flex-column">
                     <div class="section-description-verify flex">
                         <img class="section-description-verify__worker" src="/image/worker.jpg" alt="worker">
-                        <div class="section-description-verify-info">
+                        <div class="section-description-verify-info flex-column">
                             <h2 class="section-description-verify-info__title">Устраиваем на работу в проверенные компании</h2>
                             <p class="section-description-verify-info_description">Полное сопровождение по трудоустройству в Европе - от поиска вакансий до начала Вашей работы. Проверенные вакансии от стабильных работодателей, онлайн собеседование непосредственно с представителем направления
                             </p>
@@ -109,7 +113,7 @@
             <div class="container">
                 <div class="section-achievements flex">
                     <div class="section-achievements-box flex-column">
-                        <div class="section-achievements-employ">
+                        <div class="section-achievements-employ flex">
                             <span class="section-achievements-employ__prefix"></span>
                             <span class="section-achievements-employ__count">1000</span>
                             <span class="section-achievements-employ__suffix">+</span>
@@ -117,7 +121,7 @@
                         <p class="section-achievements-text">трудоустроено</p>
                     </div>
                     <div class="section-achievements-box flex-column">
-                        <div class="section-achievements-employ">
+                        <div class="section-achievements-employ flex">
                             <span class="section-achievements-employ__prefix"></span>
                             <span class="section-achievements-employ__count">2500</span>
                             <span class="section-achievements-employ__suffix">+</span>
@@ -125,7 +129,7 @@
                         <p class="section-achievements-text">шенгенских виз</p>
                     </div>
                     <div class="section-achievements-box flex-column">
-                        <div class="section-achievements-employ">
+                        <div class="section-achievements-employ flex">
                             <span class="section-achievements-employ__prefix"></span>
                             <span class="section-achievements-employ__count">500</span>
                             <span class="section-achievements-employ__suffix">+</span>
@@ -133,7 +137,7 @@
                         <p class="section-achievements-text">работодателей-<br>партнеров</p>
                     </div>
                     <div class="section-achievements-box flex-column">
-                        <div class="section-achievements-employ">
+                        <div class="section-achievements-employ flex">
                             <span class="section-achievements-employ__prefix"></span>
                             <span class="section-achievements-employ__count">6</span>
                             <span class="section-achievements-employ__suffix">+</span>
@@ -232,7 +236,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-wrapper">
+        <!-- <section class="section section-wrapper">
             <div class="container">
                 <div class="about">
                     <h3 class="section-suptitle">Наши преимущества</h3>
@@ -240,14 +244,14 @@
                     <p class="about__description">В течение последних 5-ти лет компания Work&Staff предоставляет услуги по трудоустройству за рубежом. Мы открыли двери возможностей для тысяч украинцев, которые желали расширить горизонты и найти лучшие возможности в Европе. Наша миссия заключается в обеспечении качественной поддержки украинцев на каждом этапе карьерного пути за рубежом. Опытная команда, знание рынков труда и прочные партнерские связи – вот что обеспечивает успешное трудоустройство наших клиентов. Из всех стран ЕС – мы выбрали именно те, где украинцам комфортно работать и проще всего адаптироваться. Продолжаем вдохновлять и менять жизнь людей к лучшему каждый день. Рады стать частью вашего путешествия к успеху и росту.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="section section-wrapper">
             <div class="container">
                 <div class="categories flex-column">
                     <h3 class="section-suptitle">Официальная Работа</h3>
                     <h2 class="section-title">Путь в Европу</h2>
                     <div class="categories-info flex">
-                        <p class="categories-info-description">Хотите легально и безопасно работать в Европе за достойную оплату? Мы готовы вам помочь! Наша команда обеспечит полное сопровождение в трудоустройстве, подберет выгодные вакансии по вашей квалификации и пожеланиям. Мы сотрудничаем только с надежными работодателями, которые заботятся о комфорте и благосостоянии работников. Улучшите качество жизни вместе с нами, узнайте больше о возможностях легального трудоустройства в Европе!
+                        <p class="categories-info-description">Хотите легально и безопасно работать в Европе за достойную оплату? Мы готовы вам помочь! Наша команда обеспечит полное сопровождение в трудоустройстве, подберет выгодные вакансии по вашей квалификации и пожеланиям. <br><br> Мы сотрудничаем только с надежными работодателями, которые заботятся о комфорте и благосостоянии работников. Улучшите качество жизни вместе с нами, узнайте больше о возможностях легального трудоустройства в Европе!
                         </p>
                         <img src="/image/worker2.jpg" class="categories-info-img" alt="workers-photo">
                     </div>
@@ -256,13 +260,17 @@
         </section>
         <section class="section section-wrapper">
             <div class="container">
-                <div class="services">
+                <div class="services flex-column">
                     <h3 class="section-suptitle">Официальная Работа в Европе</h3>
                     <h2 class="section-title">Работа в Европе + документы</h2>
                     <div class="services-company flex-column">
-                        <img class="services-company-photo" src="" alt="">
-                        <h2 class="section-title">Помогаем утроится в Надежные Компании</h2>
-                        <p class="services-company__text">Полное сопровождение по трудоустройству в Европе - от поиска вакансий до начала Вашей работы. Проверенные вакансии от стабильных работодателей, онлайн собеседование непосредственно с представителем направления</p>
+                       <div class="services-company-box flex">
+                        <img class="services-company-photo" src="/image/worker-three.jpg" alt="worker">
+                        <div class="services-company-box-text flex-column">
+                            <h2 class="section-title">Помогаем утроится в Надежные Компании</h2>
+                            <p class="services-company__text">Полное сопровождение по трудоустройству в Европе - от поиска вакансий до начала Вашей работы. Проверенные вакансии от стабильных работодателей, онлайн собеседование непосредственно с представителем направления</p>
+                        </div>
+                       </div>
                         <div class="messangers-items flex">
                             <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
                             <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
@@ -270,9 +278,13 @@
                         </div>
                     </div>
                     <div class="services-company flex-column">
-                        <img class="services-company-photo" src="" alt="">
-                        <h2 class="section-title">Самостоятельно готовим документы</h2>
+                       <div class="services-company-box flex">
+                        <img class="services-company-photo services-company-box" src="/image/women-document.jpg" alt="">
+                        <div class="services-company-box-text flex-column">
+                            <h2 class="section-title">Самостоятельно готовим документы</h2>
                         <p class="services-company__text">Любые документы, необходимые Вам для работы. Даже если Вы едете работать повторно, или нашли работу самостоятельно - мы готовы помочь с оформлением. Заказать подготовку одного документа или полный пакет с сопровождением - выбирать Вам.</p>
+                        </div>
+                       </div>
                         <div class="messangers-items flex">
                             <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
                             <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
@@ -282,39 +294,35 @@
                 </div>
             </div>
         </section>
-        <section class="section section-wrapper">
-            <div class="container">
-                <div class="contacts">
-                    <h2 class="section-title">Наши контакты</h2>
-                    <div class="contacts-items flex">
-                        <div class="contancts-box flex-column">
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
-                            <span class="contacts-box__text">Пишите нам в viber</span>
-                        </div>
-                        <div class="contancts-box flex-column">
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
-                            <span class="contacts-box__text">Пишите нам в telegram</span>
-                        </div>
-                        <div class="contancts-box flex-column">
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
-                            <span class="contacts-box__text">Пишите нам по номеру</span>
-                        </div>
+    </div>
+    <section class="section-footer section-wrapper">
+        <div class="container">
+            <div class="contacts flex-column">
+                <h2 class="section-title">Наши контакты</h2>
+                <div class="contacts-items flex">
+                    <div class="contancts-box flex-column">
+                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
+                        <span class="contacts-box__text">Пишите нам в viber</span>
                     </div>
-                    <div class="contacts-telephons">
-                        <h2 class="section-title">Наши актуальные номера телефонов контакты</h2>
-                        <div class="contacts-telephons-box">
-                            <a class="contacts-telephons-box__phone" href="tel:000000">+38000000000</a>
-                            <a class="contacts-telephons-box__phone" href="tel:000000">+38000000000</a>
-                            <a class="contacts-telephons-box__phone" href="tel:000000">+38000000000</a>
-                        </div>
+                    <div class="contancts-box flex-column">
+                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
+                        <span class="contacts-box__text">Пишите нам в telegram</span>
+                    </div>
+                    <div class="contancts-box flex-column">
+                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
+                        <span class="contacts-box__text">Пишите нам по номеру</span>
+                    </div>
+                </div>
+                <div class="contacts-telephons flex-column">
+                    <h2 class="section-title">Наши актуальные номера телефонов контакты</h2>
+                    <div class="contacts-telephons-box flex">
+                        <a class="contacts-telephons-box__phone nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
+                        <a class="contacts-telephons-box__phone nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
+                        <a class="contacts-telephons-box__phone nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <footer class="footer">
-            
-        </footer>
-    </div>
+        </div>
+    </section>
 </body>
 </html>

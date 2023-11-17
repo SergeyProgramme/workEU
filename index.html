@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="page-wrapper">
+        <img src="/image/bg-5.jpg" class="page-wrapper__bg main-bg" alt="">
         <nav class="nav-wrapper ">
           <div class="container">
                 <div class="nav-content flex">
@@ -42,36 +43,46 @@
           </div>
         </nav>
         <nav class="navbar-wrapper">
+        <!-- <img class="navbar__bg" src="/image/bg-section-2.jpg" alt=""> -->
           <div class="container">
+                <div class="navbar-menu-button">
+                    <span class="navbar-menu-button__line"></span>
+                </div>
+                
                 <div class="navbar flex">
                     <img class="navbar__logo" src="/image/logo-nav.png" alt="logo">
+                   
+                    <div class="diamond-container">
+                        <img class="diamond" src="/image/diamond.png" alt="diamond">
+                    </div>
                     <ul class="navbar-items flex">
-                        <a class="navbar-items-link" href="#">
+                        <a class="navbar-items-link" href="#header">
                             <li class="navbar-items-link__list">Главная</li>
                         </a>
-                        <a class="navbar-items-link" href="#">
+                        <a class="navbar-items-link" href="#about">
                             <li class="navbar-items-link__list">О нас</li>
                         </a>
-                        <a class="navbar-items-link" href="#">
+                        <a class="navbar-items-link" href="#catalog">
                             <li class="navbar-items-link__list">Каталог Вакансий</li>
                         </a>
-                        <a class="navbar-items-link" href="#">
+                        <a class="navbar-items-link" href="#services">
                             <li class="navbar-items-link__list">Услуги</li>
                         </a>
-                        <a class="navbar-items-link" href="#">
+                        <a class="navbar-items-link" href="#contacts">
                             <li class="navbar-items-link__list">Контакты</li>
                         </a>
                     </ul>
                 </div>
           </div>
         </nav>
-        <header class="header-wrapper">
+        <header id="header" class="header-wrapper">
+            <!-- <img class="header__bg" src="/image/bg-section-3.jpg" alt=""> -->
           <div class="container">
            <div class="header flex-column">
-            <h3 class="header-sup-title">Безопасная работа в европе!</h3>
+            <h3 class="header-sup-title _anim-item _anim-no-hide">Безопасная работа в европе!</h3>
             <div class="header-flex flex">
-                <img class="header-img" src="/image/europe-bg.jpg" alt="bg-europe">
-                <div class="header-info flex-column">
+                <img class="header-img _anim-item _anim-no-hide" src="/image/europe-bg.jpg" alt="bg-europe">
+                <div class="header-info flex-column _anim-item _anim-no-hide">
                    <div class="header-info-block">
                     <h1 class="header-info-title">Официальная работа в Европе</h1>
                     <p class="header-info-description">Трудоустраиваем на проверенные вакансии в 4-х странах ЕС.
@@ -79,8 +90,8 @@
                         Более 5 лет с Вами!</p>
                    </div>
                     <div class="header-info-btns flex">
-                        <div class="header-info-btns-button"><a href="#"><button>Направление</button></a></div>
-                        <div class="header-info-btns-button"><a href="#"><button>Подробнее</button></a></div>
+                        <div class="header-info-btns-button"><a href="#catalog"><button>Направление</button></a></div>
+                        <div class="header-info-btns-button"><a href="#services"><button>Подробнее</button></a></div>
                     </div>
                 </div>
             </div>
@@ -91,20 +102,20 @@
             <div class="container">
                 <div class="section-description flex-column">
                     <div class="section-description-verify flex">
-                        <img class="section-description-verify__worker" src="/image/worker.jpg" alt="worker">
-                        <div class="section-description-verify-info flex-column">
+                        <img class="section-description-verify__worker _anim-item _anim-no-hide" src="/image/worker.jpg" alt="worker">
+                        <div class="section-description-verify-info flex-column _anim-item _anim-no-hide">
                             <h2 class="section-description-verify-info__title">Устраиваем на работу в проверенные компании</h2>
                             <p class="section-description-verify-info_description">Полное сопровождение по трудоустройству в Европе - от поиска вакансий до начала Вашей работы. Проверенные вакансии от стабильных работодателей, онлайн собеседование непосредственно с представителем направления
                             </p>
                         </div>
                     </div>
                     <div class="section-description-verify flex">
-                        <div class="section-description-verify-info">
+                        <div class="section-description-verify-info  _anim-item _anim-no-hide">
                             <h2 class="section-description-verify-info__title">Готовим документы</h2>
                             <p class="section-description-verify-info_description"> Любые документы, необходимые Вам для работы. Даже если Вы едете работать повторно, или нашли работу самостоятельно - мы готовы помочь с оформлением. Заказать подготовку одного документа или полный пакет с сопровождением - выбирать Вам.
                             </p>
                         </div>
-                        <img class="section-description-verify__worker" src="/image/documents.jpg" alt="documents">
+                        <img class="section-description-verify__worker  _anim-item _anim-no-hide" src="/image/documents.jpg" alt="documents">
                     </div>
                 </div>
             </div>
@@ -112,7 +123,7 @@
         <section class="section section-wrapper">
             <div class="container">
                 <div class="section-achievements flex">
-                    <div class="section-achievements-box flex-column">
+                    <div class="section-achievements-box _anim-item _anim-no-hide flex-column">
                         <div class="section-achievements-employ flex">
                             <span class="section-achievements-employ__prefix"></span>
                             <span class="section-achievements-employ__count">1000</span>
@@ -120,7 +131,7 @@
                         </div>
                         <p class="section-achievements-text">трудоустроено</p>
                     </div>
-                    <div class="section-achievements-box flex-column">
+                    <div class="section-achievements-box _anim-item _anim-no-hide flex-column">
                         <div class="section-achievements-employ flex">
                             <span class="section-achievements-employ__prefix"></span>
                             <span class="section-achievements-employ__count">2500</span>
@@ -128,7 +139,7 @@
                         </div>
                         <p class="section-achievements-text">шенгенских виз</p>
                     </div>
-                    <div class="section-achievements-box flex-column">
+                    <div class="section-achievements-box _anim-item _anim-no-hide flex-column">
                         <div class="section-achievements-employ flex">
                             <span class="section-achievements-employ__prefix"></span>
                             <span class="section-achievements-employ__count">500</span>
@@ -136,7 +147,7 @@
                         </div>
                         <p class="section-achievements-text">работодателей-<br>партнеров</p>
                     </div>
-                    <div class="section-achievements-box flex-column">
+                    <div class="section-achievements-box _anim-item _anim-no-hide flex-column">
                         <div class="section-achievements-employ flex">
                             <span class="section-achievements-employ__prefix"></span>
                             <span class="section-achievements-employ__count">6</span>
@@ -148,36 +159,36 @@
             </div> 
         </section>
 
-        <section class="section section-wrapper">
+        <section id="catalog" class="section section-wrapper">
             <div class="container">
                 <div class="section-countries flex-column">
-                    <h3 class="section-suptitle">Работа в Европе</h3>
-                    <h2 class="section-countries-title section-title">Лучшие страны для Работы</h2>
+                    <h3 class="section-suptitle  _anim-item _anim-no-hide">Работа в Европе</h3>
+                    <h2 class="section-countries-title  _anim-item _anim-no-hide section-title">Лучшие страны для Работы</h2>
                     <div class="section-countries-cards flex">
-                        <div class="section-countries-cards-items flex-column">
+                        <div class="section-countries-cards-items _anim-item _anim-no-hide flex-column">
                             <img class="section-countries-cards-items__flag" src="/image/poland.jpg" alt="flag-poland">
                             <p class="section-countries-cards-items__name">Польша</p>
                         </div>
-                        <div class="section-countries-cards-items flex-column">
+                        <div class="section-countries-cards-items _anim-item _anim-no-hide flex-column">
                             <img class="section-countries-cards-items__flag" src="/image/germany.png" alt="flag-germany">
                             <p class="section-countries-cards-items__name">Германия</p>
                         </div>
-                        <div class="section-countries-cards-items flex-column">
+                        <div class="section-countries-cards-items _anim-item _anim-no-hide flex-column">
                             <img class="section-countries-cards-items__flag" src="/image/niderland.png" alt="flag-niderland">
                             <p class="section-countries-cards-items__name">Нидерланды</p>
                         </div>
-                        <div class="section-countries-cards-items flex-column">
+                        <div class="section-countries-cards-items _anim-item _anim-no-hide flex-column">
                             <img class="section-countries-cards-items__flag" src="/image/czechia.png" alt="flag-czechia">
                             <p class="section-countries-cards-items__name">Чехия</p>
                         </div>
                     </div>
                 </div>
                 <div class="messangers flex-column">
-                    <h3 class="messangers__title">Обратитесь за консультацией к нашим специалистам</h3>
+                    <h3 class="messangers__title _anim-item _anim-no-hide">Обратитесь за консультацией к нашим специалистам</h3>
                     <div class="messangers-items flex">
-                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
-                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
-                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
+                        <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
+                        <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
+                        <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
                     </div>
                 </div>
             </div>
@@ -186,25 +197,25 @@
         <section class="section section-wrapper">
             <div class="container">
                 <div class="section-steps flex-column">
-                    <h3 class="section-suptitle">Поэтапное сопровождение</h3>
-                    <h2 class="section-title">Простые шаги легального трудоустройства</h2>
+                    <h3 class="section-suptitle _anim-item _anim-no-hide">Поэтапное сопровождение</h3>
+                    <h2 class="section-title _anim-item _anim-no-hide">Простые шаги легального трудоустройства</h2>
                     <div class="section-steps-cards flex">
-                        <div class="section-steps-cards-items flex-column">
+                        <div class="section-steps-cards-items _anim-item _anim-no-hide flex-column">
                             <img class="section-steps-cards-items__icon" src="/image/paper.png" alt="paper">
                             <h4 class="section-steps-cards-items__title">Находим вакансию</h4>
                             <p class="section-steps-cards-items__description">Заключение сделки. Подбор вакансий. Оценка документов. Согласование с работодателем</p>
                         </div>
-                        <div class="section-steps-cards-items flex-column">
+                        <div class="section-steps-cards-items _anim-item _anim-no-hide flex-column">
                             <img class="section-steps-cards-items__icon" src="/image/interview.png" alt="interview">
                             <h4 class="section-steps-cards-items__title">Собеседование</h4>
                             <p class="section-steps-cards-items__description">Онлайн собеседование кандидата с европейским работодателем. Контракт</p>
                         </div>
-                        <div class="section-steps-cards-items flex-column">
+                        <div class="section-steps-cards-items _anim-item _anim-no-hide flex-column">
                             <img class="section-steps-cards-items__icon" src="/image/document.png" alt="document">
                             <h4 class="section-steps-cards-items__title">Документы и трансфер</h4>
                             <p class="section-steps-cards-items__description">Готовим все рабочие документы. Организовываем трансфер, согласовываем условия проживания</p>
                         </div>
-                        <div class="section-steps-cards-items flex-column">
+                        <div class="section-steps-cards-items _anim-item _anim-no-hide flex-column">
                             <img class="section-steps-cards-items__icon" src="/image/helping.png" alt="helping">
                             <h4 class="section-steps-cards-items__title">Сопровождение</h4>
                             <p class="section-steps-cards-items__description">Встреча на месте. Контролируем поселение, стажировку и выход на работу. Согласовываем детали на месте</p>
@@ -214,21 +225,21 @@
             </div>
         </section>
 
-        <section class="section section-wrapper">
+        <section id="about" class="section section-wrapper">
             <div class="container">
                 <div class="section-advantages flex-column">
-                    <h3 class="section-suptitle">Наши преимущества</h3>
-                    <h2 class="section-title">Почему мы?</h2>
+                    <h3 class="section-suptitle  _anim-item _anim-no-hide  _anim-item _anim-no-hide">Наши преимущества</h3>
+                    <h2 class="section-title  _anim-item _anim-no-hide  _anim-item _anim-no-hide">Почему мы?</h2>
                     <div class="section-advantages-cards flex">
-                        <div class="section-advantages-cards-items flex-column">
+                        <div class="section-advantages-cards-items section-steps-cards-items _anim-item _anim-no-hide flex-column">
                             <h4 class="section-advantages-cards-items__title">Индивидуальный подход к каждому</h4>
                             <p class="section-advantages-cards-items__description">Мы подбираем вакансии, исходя из ваших предпочтений, склонностей, опыта работы и жизненного контекста</p>
                         </div>
-                        <div class="section-advantages-cards-items flex-column">
+                        <div class="section-advantages-cards-items section-steps-cards-items _anim-item _anim-no-hide flex-column">
                             <h4 class="section-advantages-cards-items__title">Оперативное согласование вакансий</h4>
                             <p class="section-advantages-cards-items__description">За 6 лет работы мы наработали много прочных партнерских связей, поэтому согласование вакансий с работодателями происходит в очень сжатые сроки</p>
                         </div>
-                        <div class="section-advantages-cards-items flex-column">
+                        <div class="section-advantages-cards-items section-steps-cards-items _anim-item _anim-no-hide flex-column">
                             <h4 class="section-advantages-cards-items__title">Бесстрессовое трудоустройство</h4>
                             <p class="section-advantages-cards-items__description">Мы берем на себя все взаимодействие с работодателем, кураторами, административными учреждениями и реально решаем 99% вопросов</p>
                         </div>
@@ -245,12 +256,13 @@
                 </div>
             </div>
         </section> -->
+        
         <section class="section section-wrapper">
             <div class="container">
                 <div class="categories flex-column">
-                    <h3 class="section-suptitle">Официальная Работа</h3>
-                    <h2 class="section-title">Путь в Европу</h2>
-                    <div class="categories-info flex">
+                    <h3 class="section-suptitle  _anim-item _anim-no-hide">Официальная Работа</h3>
+                    <h2 class="section-title  _anim-item _anim-no-hide">Путь в Европу</h2>
+                    <div class="categories-info services-company-box-text _anim-item _anim-no-hide flex">
                         <p class="categories-info-description">Хотите легально и безопасно работать в Европе за достойную оплату? Мы готовы вам помочь! Наша команда обеспечит полное сопровождение в трудоустройстве, подберет выгодные вакансии по вашей квалификации и пожеланиям. <br><br> Мы сотрудничаем только с надежными работодателями, которые заботятся о комфорте и благосостоянии работников. Улучшите качество жизни вместе с нами, узнайте больше о возможностях легального трудоустройства в Европе!
                         </p>
                         <img src="/image/worker2.jpg" class="categories-info-img" alt="workers-photo">
@@ -258,71 +270,95 @@
                 </div>
             </div>
         </section>
-        <section class="section section-wrapper">
+        <section id="services" class="section section-wrapper">
             <div class="container">
                 <div class="services flex-column">
-                    <h3 class="section-suptitle">Официальная Работа в Европе</h3>
-                    <h2 class="section-title">Работа в Европе + документы</h2>
+                    <h3 class="section-suptitle  _anim-item _anim-no-hide">Официальная Работа в Европе</h3>
+                    <h2 class="section-title  _anim-item _anim-no-hide">Работа в Европе + документы</h2>
                     <div class="services-company flex-column">
                        <div class="services-company-box flex">
-                        <img class="services-company-photo" src="/image/worker-three.jpg" alt="worker">
-                        <div class="services-company-box-text flex-column">
-                            <h2 class="section-title">Помогаем утроится в Надежные Компании</h2>
+                        <img class="services-company-photo _anim-item _anim-no-hide" src="/image/worker-three.jpg" alt="worker">
+                        <div class="services-company-box-text _anim-item _anim-no-hide flex-column">
+                            <h2 class="section-title _anim-item _anim-no-hide">Помогаем утроится в Надежные Компании</h2>
                             <p class="services-company__text">Полное сопровождение по трудоустройству в Европе - от поиска вакансий до начала Вашей работы. Проверенные вакансии от стабильных работодателей, онлайн собеседование непосредственно с представителем направления</p>
                         </div>
                        </div>
                         <div class="messangers-items flex">
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
+                            <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
+                            <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
+                            <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
                         </div>
                     </div>
                     <div class="services-company flex-column">
                        <div class="services-company-box flex">
-                        <img class="services-company-photo services-company-box" src="/image/women-document.jpg" alt="">
-                        <div class="services-company-box-text flex-column">
-                            <h2 class="section-title">Самостоятельно готовим документы</h2>
+                        <img class="services-company-photo _anim-item _anim-no-hide services-company-box" src="/image/women-document.jpg" alt="">
+                        <div class="services-company-box-text _anim-item _anim-no-hide flex-column">
+                            <h2 class="section-title _anim-item _anim-no-hide">Самостоятельно готовим документы</h2>
                         <p class="services-company__text">Любые документы, необходимые Вам для работы. Даже если Вы едете работать повторно, или нашли работу самостоятельно - мы готовы помочь с оформлением. Заказать подготовку одного документа или полный пакет с сопровождением - выбирать Вам.</p>
                         </div>
                        </div>
                         <div class="messangers-items flex">
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
-                            <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
+                            <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
+                            <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
+                            <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-    <section class="section-footer section-wrapper">
-        <div class="container">
+    <section id="contacts" class="section-footer section-wrapper">
             <div class="contacts flex-column">
-                <h2 class="section-title">Наши контакты</h2>
+                <h2 class="section-title _anim-item _anim-no-hide">Наши контакты</h2>
                 <div class="contacts-items flex">
-                    <div class="contancts-box flex-column">
-                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
+                    <div class="contancts-box _anim-item _anim-no-hide flex-column">
+                        <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/viber.png" alt="viber"></a>
                         <span class="contacts-box__text">Пишите нам в viber</span>
                     </div>
-                    <div class="contancts-box flex-column">
-                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
+                    <div class="contancts-box _anim-item _anim-no-hide flex-column">
+                        <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/telegram.png" alt="telegram"></a>
                         <span class="contacts-box__text">Пишите нам в telegram</span>
                     </div>
-                    <div class="contancts-box flex-column">
-                        <a class="messangers-items-link" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
+                    <div class="contancts-box _anim-item _anim-no-hide flex-column">
+                        <a class="messangers-items-link _anim-item _anim-no-hide" href="#"><img class="messangers-items-link__icon" src="/image/phone-main.png" alt="phone"></a>
                         <span class="contacts-box__text">Пишите нам по номеру</span>
                     </div>
                 </div>
                 <div class="contacts-telephons flex-column">
-                    <h2 class="section-title">Наши актуальные номера телефонов контакты</h2>
+                    <h2 class="section-title _anim-item _anim-no-hide">Наши актуальные номера телефонов контакты</h2>
                     <div class="contacts-telephons-box flex">
-                        <a class="contacts-telephons-box__phone nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
-                        <a class="contacts-telephons-box__phone nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
-                        <a class="contacts-telephons-box__phone nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
+                        <a class="contacts-telephons-box__phone _anim-item _anim-no-hide nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
+                        <a class="contacts-telephons-box__phone _anim-item _anim-no-hide nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
+                        <a class="contacts-telephons-box__phone _anim-item _anim-no-hide nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
                     </div>
                 </div>
             </div>
-        </div>
+        <nav class="footer-wrapper">
+                  <div class="navbar-menu-button">
+                      <span class="navbar-menu-button__line"></span>
+                  </div>
+                  <div class="navbar flex">
+                      <img class="navbar__logo" src="/image/logo-nav.png" alt="logo">
+                      <ul class="navbar-items flex">
+                          <a class="navbar-items-link" href="#header">
+                              <li class="navbar-items-link__list">Главная</li>
+                          </a>
+                          <a class="navbar-items-link" href="#about">
+                              <li class="navbar-items-link__list">О нас</li>
+                          </a>
+                          <a class="navbar-items-link" href="#catalog">
+                              <li class="navbar-items-link__list">Каталог Вакансий</li>
+                          </a>
+                          <a class="navbar-items-link" href="#services">
+                              <li class="navbar-items-link__list">Услуги</li>
+                          </a>
+                          <a class="navbar-items-link" href="#contacts">
+                              <li class="navbar-items-link__list">Контакты</li>
+                          </a>
+                      </ul>
+                  </div>
+          </nav>
     </section>
+</div>
+<script src="/script.js"></script>
 </body>
 </html>

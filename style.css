@@ -502,45 +502,72 @@ padding: 20px 0;
     border-radius: 20px;
     object-fit: cover;
 }
-.messangers__title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 50px;
-    color: #2C2C2C;
-    text-align: center;
-    transform: translate(0px, -50%);
-    opacity: 0;
-    transition: transform .8s, opacity .5s, ease .5s;
-}
-.messangers__title._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
-}
-.messangers-items {
+
+  .messangers {
+    display: flex;
     justify-content: center;
-    column-gap: 30px;
-    padding: 30px 10px;
-    border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.messangers-items-link:nth-child(1) {
-    transform: translate(-1000%, 0px);
-    transition: transform .8s, 1s ;
-}
-.messangers-items-link:nth-child(3) {
-    transform: translate(1000%,0px);
-    transition: transform .8s,1s ;
-}
-.messangers-items-link._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
-}
-.messangers-items-link__icon {
-    width:80px;
-    height:80px;
-    border-radius: 20px;
-    object-fit: cover;
-}
+  }
+  
+  .messangers li {
+    list-style: none;
+  }
+  
+  .messangers li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+  .messangers li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  .messangers li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .messangers li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  .messangers li a:hover:before {
+    top: 0;
+  }
+  
+  .messangers li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  .messangers li:nth-child(2) a:before{
+    background: #55acee;
+  }
+
+  
+  .messangers li:nth-child(3) a:before {
+    background: #dd4b39;
+  }
 .section-steps {
     row-gap: 20px;
 }

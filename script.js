@@ -67,3 +67,97 @@ function floatable(panel) {
                    rotateY(${y}deg)`;
   });
 }
+// count
+// const time = 3000;
+// const step = 100;
+
+// function outNum(num, elem) {
+//     let n = 0;  // Добавил объявление переменной n
+//     let l = document.querySelector('#' + elem);
+//     let t = Math.round(time / (num / step));
+//     let interval = setInterval(() => {
+//         n = n + step;
+//         if (n >= num) {  // Заменил условие на >= чтобы избежать проблем с округлением
+//             clearInterval(interval);
+//             n = num;  // Установил точное значение, чтобы избежать погрешности округления
+//         }
+//         l.innerHTML = n;
+//     }, t);
+// }
+// outNum(70000, 'out-1');
+// outNum(70000, 'out-2');
+// const timeSecond = 3000;
+// const stepSecond = 10;
+
+// function outNumSecond(num, elem) {
+//     let n = 0;  // Добавил объявление переменной n
+//     let l = document.querySelector('#' + elem);
+//     let t = Math.round(timeSecond / (num / stepSecond));
+//     let interval = setInterval(() => {
+//         n = n + stepSecond;
+//         if (n >= num) {  // Заменил условие на >= чтобы избежать проблем с округлением
+//             clearInterval(interval);
+//             n = num;  // Установил точное значение, чтобы избежать погрешности округления
+//         }
+//         l.innerHTML = n;
+//     }, t);
+// }
+// outNumSecond(500, 'out-3');
+
+// const timeThree = 3000;
+// const stepThree = 1;
+
+// function outNumThree(num, elem) {
+//     let n = 0;  // Добавил объявление переменной n
+//     let l = document.querySelector('#' + elem);
+//     let t = Math.round(timeThree / (num / stepThree));
+//     let interval = setInterval(() => {
+//         n = n + stepThree;
+//         if (n >= num) {  // Заменил условие на >= чтобы избежать проблем с округлением
+//             clearInterval(interval);
+//             n = num;  // Установил точное значение, чтобы избежать погрешности округления
+//         }
+//         l.innerHTML = n;
+//     }, t);
+// }
+// outNumThree(14, 'out-4');
+const time = 5000;
+const step = 100;
+
+function outNum(num, elem) {
+  let n = 0;
+  let l = document.querySelector('#' + elem);
+  let t = Math.round(time / (num / step));
+  let interval = setInterval(() => {
+    n = n + step;
+    if (n >= num) {
+      clearInterval(interval);
+      n = num;
+    }
+    l.innerHTML = n;
+  }, t);
+}
+
+function startCounterIfVisible() {
+  const elements = document.querySelectorAll('[id^="out-"]');
+  const windowHeight = window.innerHeight;
+
+  elements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const isVisible = rect.top < windowHeight && rect.bottom >= 0;
+
+    if (isVisible) {
+      const num = parseInt(element.innerHTML, 10);
+      if (num === 0) {
+        const targetNum = parseInt(element.dataset.targetNum, 10);
+        outNum(targetNum, element.id);
+      }
+    }
+  });
+}
+
+// Добавляем обработчик события прокрутки
+window.addEventListener('scroll', startCounterIfVisible);
+
+// Запускаем счетчики для видимых элементов при загрузке страницы
+window.addEventListener('load', startCounterIfVisible);

@@ -161,3 +161,25 @@ window.addEventListener('scroll', startCounterIfVisible);
 
 // Запускаем счетчики для видимых элементов при загрузке страницы
 window.addEventListener('load', startCounterIfVisible);
+// burger
+const burger = document.querySelector('.navbar-burger');
+const menu = document.querySelector('.nav-box');
+const body = document.querySelector('body');
+const links = document.querySelectorAll('.navbar-items-link__list');
+
+function handlerBurgerMenu() {
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+  body.classList.toggle('lock');
+}
+
+burger.addEventListener('click', handlerBurgerMenu);
+
+// Добавим обработчик клика для каждой ссылки
+links.forEach(link => {
+  link.addEventListener('click', function() {
+    burger.classList.remove('active');
+    menu.classList.remove('active');
+    body.classList.remove('lock');
+  });
+});

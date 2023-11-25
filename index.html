@@ -189,17 +189,17 @@
                     </div>
                     <ul class="messangers flex">
                         
-                        <h4 class="messangers-title">Оставляйте заявку на работу через Telegram или WhatsAap</h4>
+                        <h4 class="messangers-title">Оставляйте заявку на работу через Telegram или WhatsApp</h4>
                        
                         <div class="messangers-box">
                             <div class="glass-btn blue-btn ">
-                                <img loading="lazy" src="/image/telegram.png" alt="telegram" >
+                               <a href="#contacts"> <img loading="lazy" src="/image/telegram.png" alt="telegram" ></a>
                                 <span class="glass-btn__telegram">Telegram</span>
                             </div>
                             
                               <div class="glass-btn red-btn">
-                                <img loading="lazy" src="/image/whatsaap-icon.png" alt="whatsaap" >
-                                <span class="glass-btn__whatsaap">WhatsAap</span>
+                                <a href="#contacts"><img loading="lazy" src="/image/whatsaap-icon.png" alt="whatsapp" ></a>
+                                <span class="glass-btn__whatsaap">WhatsApp</span>
                             </div>
                         </div>
                           <h4 class="messangers-title">И с вами свяжется наш специалист</h4>
@@ -266,15 +266,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="section section-wrapper">
-            <div class="container">
-                <div class="about">
-                    <h3 class="section-suptitle">Наши преимущества</h3>
-                    <h2 class="section-title">Почему мы?</h2>
-                    <p class="about__description">В течение последних 5-ти лет компания Work&Staff предоставляет услуги по трудоустройству за рубежом. Мы открыли двери возможностей для тысяч украинцев, которые желали расширить горизонты и найти лучшие возможности в Европе. Наша миссия заключается в обеспечении качественной поддержки украинцев на каждом этапе карьерного пути за рубежом. Опытная команда, знание рынков труда и прочные партнерские связи – вот что обеспечивает успешное трудоустройство наших клиентов. Из всех стран ЕС – мы выбрали именно те, где украинцам комфортно работать и проще всего адаптироваться. Продолжаем вдохновлять и менять жизнь людей к лучшему каждый день. Рады стать частью вашего путешествия к успеху и росту.</p>
-                </div>
-            </div>
-        </section> -->
         
         <section class="section section-wrapper">
             <div class="container">
@@ -305,11 +296,11 @@
                        </div>
                          <ul class="messangers">
                             <div class="glass-btn blue-btn ">
-                                <img loading="lazy" src="/image/telegram.png" alt="telegram">
+                                <a href="#contacts"><img loading="lazy" src="/image/telegram.png" alt="telegram"></a>
                               </div>
                             
                               <div class="glass-btn red-btn">
-                                <img loading="lazy" src="/image/whatsaap-icon.png" alt="whatsaap">
+                                <a href="#contacts"><img loading="lazy" src="/image/whatsaap-icon.png" alt="whatsapp"></a>
                               </div>
                        
                 </ul>
@@ -324,11 +315,11 @@
                        </div>
                         <ul class="messangers">
                             <div class="glass-btn blue-btn ">
-                                <img loading="lazy" src="/image/telegram.png" alt="telegram" >
+                               <a href="#contacts"> <img loading="lazy" src="/image/telegram.png" alt="telegram" ></a>
                               </div>
                             
                               <div class="glass-btn red-btn">
-                                <img loading="lazy" src="/image/whatsaap-icon.png" alt="whatsaap">
+                                <a href="#contacts"><img loading="lazy" src="/image/whatsaap-icon.png" alt="whatsapp"></a>
                               </div>
                        
                 </ul>
@@ -337,52 +328,69 @@
             </div>
         </section>
     <section id="contacts" class="section-footer contacts section-wrapper">
-        <!-- <img loading="lazy" class="contacts__bg" src="/image/bg-2.jpg" alt="contacts"> -->
            <div class="contacts-box flex">
-            <div class="contacts contacts-top flex-column">
-                <h2 class="section-title _anim-item _anim-no-hide">Наши контакты</h2>
-                 <ul class="messangers flex-column">
-                        <!-- <li>
-                          <a class="messangers-items-link" href="#"><i class="fab fa-telegram icon"></i></a>
-                           
-                          
-                        </li>
-                        <li>
-                            <a class="messangers-items-link" href="#"><i class="fab fa-viber icon"></i></a>
-                            
-                        </li> -->
-                        <div class="glass-btn blue-btn ">
-                            <img loading="lazy" src="/image/telegram.png" alt="telegram">
-                            <span class="contacts-box__text">Пишите нам в telegram</span> 
-                          </div>
-                        
-                          <div class="glass-btn red-btn">
-                            <img loading="lazy" src="/image/whatsaap-icon.png" alt="whatsaap">
-                            <span class="contacts-box__text">Пишите нам в WhatsAap</span>
-                          </div>
-                          <div class="glass-btn red-btn">
-                            <img loading="lazy" src="/image/Email-icon.png" alt="Email">
-                            <span class="contacts-box__text">Пишите нам на почту:</span> <a class="contacts-box__text" href=""></a>
-                          </div>
-                          <div class="glass-btn red-btn">
-                            <img loading="lazy" src="/image/adress-icon.png" alt="adress">
-                            <span class="contacts-box__text">Адрес:</span>
-                          </div>
-                          
-                </ul>
+                <form class="form flex-column">
+                     <div class="form-container flex-column">
+                       <label class="form__label" for="name">Имя:</label>
+                      <input class="form__input" type="text" id="name" name="name" required>
+                     </div>
+                 
+                     <div class="form-container flex-column">
+                       <label class="form__label" for="phone">Номер телефона:</label>
+                              <input type="text" placeholder="" ms-code-phone-number="ca,gb,us" class="input form__input" id="Phone">
+                              <span class="form-input-block__span">Обязательно указывайте номер телефона который зарегистрирован в WhatsApp или Telegram</span>    
+                     </div>
+                 
+                     <div class="form-container flex-column">
+                       <label class="form__label" for="messenger">Мессенджер для связи:</label>
+                      <select class="form-select" id="messenger" name="messenger" required>
+                          <option value="telegram" class="select__option select-telegram">Telegram</option>
+                          <option value="whatsapp" class="select__option select-whatsapp">WhatsApp</option>
+                      </select>
+                     </div>
+                 
+                      <button class="form__button" type="submit">Отправить данные</button>
+                </form>
             </div>
-            <!-- <div class="contacts-telephons flex-column">
-                <h2 class="section-title _anim-item _anim-no-hide">Наши номера телефонов</h2>
-                <div id="phone" class="contacts-telephons-box flex-column">
-                    <a class="contacts-telephons-box__phone _anim-item _anim-no-hide nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
-                    <a class="contacts-telephons-box__phone _anim-item _anim-no-hide nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
-                    <a class="contacts-telephons-box__phone _anim-item _anim-no-hide nav-contant-telephons-ul-li-link__number" href="tel:000000">+38000000000</a>
-                </div>
-            </div> -->
-           </div>
     </section>
 </div>
+<!-- Скрипт маски ввода номера начало -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+<script>
+  $(document).ready(function() {
+    $('input[ms-code-phone-number]').each(function() {
+      var input = this;
+      var preferredCountries = $(input).attr('ms-code-phone-number').split(',');
 
+      var iti = window.intlTelInput(input, {
+        preferredCountries: preferredCountries,
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      });
+
+      $.get("https://ipinfo.io", function(response) {
+        var countryCode = response.country;
+        iti.setCountry(countryCode);
+      }, "jsonp");
+
+      input.addEventListener('change', formatPhoneNumber);
+      input.addEventListener('keyup', formatPhoneNumber);
+
+      function formatPhoneNumber() {
+        var formattedNumber = iti.getNumber(intlTelInputUtils.numberFormat.NATIONAL);
+        input.value = formattedNumber;
+      }
+
+      var form = $(input).closest('form');
+      form.submit(function() {
+        var formattedNumber = iti.getNumber(intlTelInputUtils.numberFormat.INTERNATIONAL);
+        input.value = formattedNumber;
+      });
+    });
+  });
+</script>
 <script src="/script.js"></script>
 </body>
 </html>
